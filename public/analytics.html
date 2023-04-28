@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>botanique</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo.svg" alt="logo" class="logo"/>
+            <nav>
+                <ul>
+                    <li>ГЛАВНАЯ</li>
+                    <li class="active">АНАЛИТИКА</li>
+                </ul>
+            </nav>
+            <a class="user">
+                <img src="./images/user.svg" alt="user"/>
+            </a>
+        </header>
+        <section class="device-section">
+            <div class="device-section__header">
+                <span><img class="unknown-device" src="./images/unknown-device.svg" alt="unknown device"/></span>
+                <div class="info">
+                    <p class="name">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</p>
+                    <p class="serial-number">S1.4.I14-9.001 &#8226; 00-024004</p>
+                </div>
+                <div class="status">
+                    <select name="device-status">
+                        <option value="working">В работе</option>
+                        <option value="done">Завершен</option>
+                    </select>
+                    <p>&#10084;</p>
+                    <img src="./images/gear.svg" alt="gear"/>
+                </div>
+            </div>
+            <div class="device-section__utils">
+                <select name="">
+                    <option value="functionality">Работа прибора</option>
+                </select>
+                <div class="btns-container">
+                    <button type="button">
+                        <img src="./images/clock.svg" alt="clock"/>
+                    </button>
+                    <div class="btns-group">
+                        <button type="button">СОХРАНИТЬ PDF</button>
+                        <button type="button" class="dots">&#8285;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="device-section__calendar">
+
+            </div>
+            <div class="device-section__timeslots">
+
+            </div>
+            <table>
+
+            </table>
+        </section>
+    </body>
+</html>
