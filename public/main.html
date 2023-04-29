@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css"> 
     </head>
     <body>
@@ -21,7 +22,7 @@
             </a>
         </header>
         <section class="input-section">
-            <input placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др."/>
+            <input class="search" placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др."/>
             <img src="./images/qr_code.svg" alt="qr code"/>
         </section>
         <section class="favourites-section">
@@ -40,14 +41,14 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>
+                        <td class="table-img">
                             <img src="./images/devices/pH.svg" alt="pH"/>
                         </td>
                         <td>
                             <p>pH-метр Mettler-Toledo International, Inc. SevenCompact S220</p>
                         </td>
                         <td>
-                            <select name="status">
+                            <select name="status" class="status-select">
                                 <option value="available">Свободен</option>
                                 <option value="not-available">Занят</option>
                             </select>
@@ -57,14 +58,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="table-img">
                             <img src="./images/devices/spectrum.svg" alt="spectrum"/>
                         </td>
                         <td>
                             <p>Спектрофотометр Varian, Inc Cary 50 Bio</p>
                         </td>
                         <td>
-                            <select name="status">
+                            <select name="status" class="status-select">
                                 <option value="available">Свободен</option>
                                 <option value="not-available">Занят</option>
                             </select>
@@ -74,14 +75,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="table-img">
                             <img src="./images/devices/titrator.svg" alt="titrator"/>
                         </td>
                         <td>
                             <p>Титратор</p>
                         </td>
                         <td>
-                            <select name="status">
+                            <select name="status" class="status-select">
                                 <option value="available">Свободен</option>
                                 <option value="not-available">Занят</option>
                             </select>
@@ -91,14 +92,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="table-img">
                             <img src="./images/devices/coagulometer.svg" alt="coagulometer"/>
                         </td>
                         <td>
                             <p>Коагулометр Tcoag, KC 4 Delta</p>
                         </td>
                         <td>
-                            <select name="status">
+                            <select name="status" class="status-select">
                                 <option value="available">Свободен</option>
                                 <option value="not-available">Занят</option>
                             </select>
@@ -108,14 +109,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="table-img">
                             <img src="./images/devices/coagulometer.svg" alt="coagulometer"/>
                         </td>
                         <td>
                             <p>Коагулометр Tcoag, KC 4 Delta</p>
                         </td>
                         <td>
-                            <select name="status">
+                            <select name="status" class="status-select">
                                 <option value="available">Свободен</option>
                                 <option value="not-available">Занят</option>
                             </select>

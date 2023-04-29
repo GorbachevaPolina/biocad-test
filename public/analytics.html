@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css"> 
     </head>
     <body>
@@ -51,13 +52,64 @@
                 </div>
             </div>
             <div class="device-section__calendar">
-
+                <input type="datetime-local" id="start-date"
+                name="start-date" value="2021-10-07T10:55" class="calendar">
+                <img src="./images/arrow.svg" alt="arrow" />
+                <input type="datetime-local" id="end-date"
+                name="end-date" value="2021-10-21T10:55" class="calendar">
             </div>
             <div class="device-section__timeslots">
-
+                <button type="button">День</button>
+                <button type="button">Неделя</button>
+                <button type="button" class="btn-active">2 недели</button>
+                <button type="button">Месяц</button>
+                <button type="button">3 месяца</button>
+                <button type="button">Полгода</button>
             </div>
-            <table>
-
+            <table class="device-section__table">
+                <thead>
+                    <tr>
+                        <th class="begin">Начало</th>
+                        <th class="type">Тип работ</th>
+                        <th class="work">Работы</th>
+                        <th class="result">Результат</th>
+                        <th>Пользователь</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-status">09.10.2021, 15:46</td>
+                        <td>
+                            <p class="work-type-status">В работе</p>
+                            <p class="work-type">Измерение</p>
+                        </td>
+                        <td class="work-description"><span>Образец/серия:</span> 000100057935_170000010325_0000251849</td>
+                        <td class="result-info">
+                            <span></span>
+                            <img src="./images/check.svg" alt="checkmark" />
+                        </td>
+                        <td class="username">morozovava</td>
+                    </tr>
+                    <tr>
+                        <td class="table-status">12.10.2021, 12:17</td>
+                        <td>
+                            <p class="work-type-status">В работе</p>
+                            <p class="work-type">Калибровка</p>
+                        </td>
+                        <td class="work-description">
+                            <p><span>Номер колонки:</span> Колонка 2</p>
+                            <p><span>Образец:</span> Образец 2</p>
+                            <p><span>Образец:</span> Образец 1</p>
+                            <p><span>Метод:</span> метод тестовый</p>
+                            <p><span>Номер колонки:</span> Колонка 1</p>
+                        </td>
+                        <td class="result-info">
+                            <span>Промывка с указанием вещества: Вещество Комментарий: тест успешности</span>
+                            <img src="./images/check.svg" alt="checkmark" />
+                        </td>
+                        <td class="username">morozovava</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
     </body>
