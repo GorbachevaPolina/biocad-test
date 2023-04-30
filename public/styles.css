@@ -2,6 +2,9 @@ body {
     margin: 0;
     font-family: 'Roboto';
     font-style: normal;
+}
+
+body, .search {
     background-color: #F5F5F5;
 }
 
@@ -10,11 +13,23 @@ a {
     color: inherit;
 }
 
-header, .input-section, .favourites {
+header, 
+.input-section, 
+.favourites, ul, 
+.device-section__header, 
+.btns-container, 
+.device-section__header .status,
+.device-section__utils {
     display: flex;
 }
 
-.favourites__p, li {
+.favourites__p, 
+li,
+.status-select,
+.device-section__header .serial-number,
+.device-section__timeslots button,
+.work-type,
+.work-description {
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -24,13 +39,20 @@ header {
     height: 48px;
     align-items: center;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-    background-color: #fff;
     font-weight: 500;
+}
+
+header, 
+table,
+.device-section, 
+.btns-container > button, 
+.btns-group, 
+.btns-group button {
+    background-color: #fff;
 }
 
 ul {
     list-style: none;
-    display: flex;
     padding: 0;
     margin: 0;
     height: 48px;
@@ -52,8 +74,16 @@ li {
 }
 
 .active {
-    color: #23B04A;
     border-bottom: 2px #23B04A solid;
+}
+
+.active,
+.status select,
+.btns-group button,
+.work-type-status,
+.error a,
+.error span {
+    color: #23B04A;
 }
 
 li:hover, a:hover {
@@ -77,7 +107,6 @@ li:hover, a:hover {
 .search {
     flex: 1;
     border: none;
-    background-color: #F5F5F5;
 
     font-size: 16px;
 }
@@ -99,7 +128,6 @@ li:hover, a:hover {
 }
 
 table {
-    background-color: #fff;
     width: 100%;
     text-align: left;
     margin-top: 16px;
@@ -128,40 +156,30 @@ td {
 .status-select {
     border: 1px solid rgba(0, 0, 0, 0.38);
     border-radius: 2px;
-    font-weight: 400;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
     padding: 2px 12px 2px 8px;
 }
-/* tbody tr {
-    position: relative;
-}
-tbody tr:before {
-    content: "";
-  display: block;
-  height: 2px;
-  overflow: hidden;
-  background: #F5F5F5;
-  position: absolute;
-  left: 5px;
-  right: 5px;
-  bottom: 0;
-}
 
-tbody tr:last-child:before {
-    background: #fff;
-} */
+.status-select,
+.device-section__timeslots button,
+.device-section__table th,
+.work-type-status,
+.table-status,
+.work-type,
+.work-description,
+.result-info span,
+.username {
+    font-weight: 400;  
+    font-size: 14px;
+}
 
 .device-section {
     margin: 52px 96px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 16px;
-    background-color: #fff;
 }
 
 .device-section__header {
-    display: flex;
     height: 72px;
     align-items: center;
 }
@@ -180,12 +198,10 @@ tbody tr:last-child:before {
 .device-section__header .serial-number {
     font-size: 12px;
     line-height: 16px;
-    color: rgba(0, 0, 0, 0.6);
     margin: 0;
 }
 
 .device-section__header .status {
-    display: flex;
     align-items: center;
     gap: 20px;
 }
@@ -197,7 +213,6 @@ tbody tr:last-child:before {
 
 .status select {
     height: 24px;
-    color: #23B04A;
     padding: 2px 4px 2px 8px;
     border: 1px solid #23B04A;
     border-radius: 2px;
@@ -209,7 +224,6 @@ tbody tr:last-child:before {
 }
 
 .device-section__utils {
-    display: flex;
     padding: 12px;
     height: 40px;
     justify-content: space-between;
@@ -221,14 +235,9 @@ tbody tr:last-child:before {
     font-size: 16px;
 }
 
-.btns-container {
-    display: flex;
-}
-
 .btns-container > button, .btns-group {
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    background-color: #fff;
 }
 
 .btns-container > button {
@@ -241,11 +250,8 @@ tbody tr:last-child:before {
 }
 
 .btns-group button {
-    color:#23B04A;
-    font-size: 14px;
     border: none;
     height: 98%;
-    background-color: #fff;
     padding: 8px;
     font-weight: 500;
 }
@@ -277,15 +283,12 @@ tbody tr:last-child:before {
 
 .device-section__timeslots button {
     height: 32px;
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 14px;
     padding: 6px 12px;
     background: rgba(33, 33, 33, 0.08);
     border: none;
     border-radius: 16px;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;    
 }
 
 .device-section__timeslots button {
@@ -315,8 +318,6 @@ tbody tr:last-child:before {
 }
 
 .device-section__table th {
-    font-weight: 400;
-    font-size: 14px;
     color: rgba(0, 0, 0, 0.38);
     border-bottom: 1px solid #F5F5F5;
     padding-top: 16px;
@@ -330,8 +331,6 @@ tbody tr:last-child:before {
 
 .table-status {
     color: rgba(0, 0, 0, 0.38);
-    font-weight: 400;
-    font-size: 14px;
 }
 
 .device-section__table tbody tr {
@@ -342,24 +341,8 @@ tbody tr:last-child:before {
     vertical-align: baseline;
 }
 
-.work-type-status {
-    font-weight: 400;
-    font-size: 14px;
-    color: #23B04A;
+.work-type-status, .work-type {
     margin: 0;
-}
-
-.work-type {
-    font-weight: 400;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
-    margin: 0;
-}
-
-.work-description {
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.6);
 }
 
 .work-description span {
@@ -371,10 +354,7 @@ tbody tr:last-child:before {
 }
 
 .result-info span {
-    /* display: inline-block; */
     float: left;
-    font-weight: 400;
-    font-size: 14px;
     width: 102px;
     height: 100px;
     display: -webkit-box;
@@ -385,8 +365,6 @@ tbody tr:last-child:before {
 
 .username {
     color: #2E9BC2;
-    font-weight: 400;
-    font-size: 14px;
 }
 
 .error {
@@ -394,14 +372,9 @@ tbody tr:last-child:before {
 }
 
 .error a {
-    color: #23B04A;
     text-decoration: underline;
 }
 
 .error a:hover {
     color:#2d8b47;
-}
-
-.error span {
-    color: #23B04A;
 }
