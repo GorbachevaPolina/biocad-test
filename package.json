@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/GorbachevaPolina/biocad-test/issues"
   },
-  "homepage": "https://github.com/GorbachevaPolina/biocad-test#readme"
+  "homepage": "https://github.com/GorbachevaPolina/biocad-test#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
